@@ -1,9 +1,14 @@
 package ar.dev.maxisandoval.footballapieditjwt.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 import java.util.List;
 
 @Entity
+@Data //getters, setters, toString, hashCode, equals
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Team {
 
     @Id

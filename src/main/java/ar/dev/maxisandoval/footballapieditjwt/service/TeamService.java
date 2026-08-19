@@ -24,4 +24,21 @@ public class TeamService {
     public Team save(Team team) {
         return teamRepository.save(team);
     }
+
+    public Team update(Long id, Team updatedTeam) {
+        Team existingTeam = getById(id);
+
+        existingTeam.setName(updatedTeam.getName());
+        existingTeam.setCapacity(updatedTeam.getCapacity());
+
+        return teamRepository.save(existingTeam);
+    }
+
+    public void deleteById(Long id) {
+        teamRepository.deleteById(id);
+    }
+
+    public void deleteAll() {
+        teamRepository.deleteAll();
+    }
 }

@@ -13,3 +13,5 @@ INSERT INTO player (name, team_id) VALUES ('Priscila', 1);
 INSERT INTO player (name, team_id) VALUES ('Lucas', 1);
 INSERT INTO player (name, team_id) VALUES ('Nico', 1);
 INSERT INTO player (name, team_id) VALUES ('Maxi', 1);
+
+INSERT INTO player (name, team_id) VALUES ('Pedro', 2);

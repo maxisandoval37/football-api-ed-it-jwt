@@ -14,6 +14,7 @@ public class AuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final JwtService jwtService;
 
     public String register(String username, String password) {
         if (userRepository.existsByUsername(username)) {
@@ -27,7 +28,7 @@ public class AuthService {
                         .build();
 
         userRepository.save(user);
-        return "f783c46578c63478cb4b68934759348";//TODO implementar
+        return jwtService.generateToken(user);
     }
 
     public String authenticate(String username, String password) {
@@ -37,6 +38,6 @@ public class AuthService {
             throw new BadCredentialsException("Usuario o contraseña incorrecto");
         }
 
-        return "f783c46578c63478cb4b68934759348";//TODO implementar
+        return jwtService.generateToken(user);
     }
 }

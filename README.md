@@ -1,4 +1,4 @@
-# football-api-ed-it-jwt - Educación IT 2025 (Curso dictado por mi autoría)
+# football-api-ed-it-jwt - Educación IT 2026 (Curso dictado por mi autoría)
 
 Este proyecto implementa un servicio REST que gestiona equipos de fútbol (**CRUD completo**), utilizando Spring Boot, Spring Security (JWT), JPA/Hibernate, base de datos en memoria H2 y Caché.
 

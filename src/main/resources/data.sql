@@ -15,3 +15,7 @@ INSERT INTO player (name, team_id) VALUES ('Nico', 1);
 INSERT INTO player (name, team_id) VALUES ('Maxi', 1);
 
 INSERT INTO player (name, team_id) VALUES ('Pedro', 2);
+
+--password: password
+INSERT INTO app_user (username, password, role) VALUES ('user1', '$2a$12$TyKhWAyOFxo3PIh0ppkSze.6iIb/DAFlzh2QlNQZNfNBnI1U3E4IW', 'USER');
+INSERT INTO app_user (username, password, role) VALUES ('admin', '$2a$12$TyKhWAyOFxo3PIh0ppkSze.6iIb/DAFlzh2QlNQZNfNBnI1U3E4IW', 'ADMIN');
